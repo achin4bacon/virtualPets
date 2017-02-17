@@ -29,7 +29,7 @@ function Controller(model) {
 	//feed the pet at index[i]
 	this.feedPet = function (index) {
 		var pet = this.getPetByIndex(index);
-		pet.hunger -= 10;
+		pet.hunger += 10;
 		// Data was updated, so update storage
 		this.model.updateAllPets();
 	}
@@ -37,7 +37,7 @@ function Controller(model) {
 	// reduce the boredom of the pet at index[i]
 	this.playWithPet = function (index) {
 		var pet = this.getPetByIndex(index);
-		pet.boredom -= 10;
+		pet.boredom += 10;
 		// Data was updated, so update storage
 		this.model.updateAllPets();
 	}

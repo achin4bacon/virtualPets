@@ -24,7 +24,7 @@ function View(controller, output) {
 		container.append("<p>" + pet.name + "</p>");
 		// append the pet's hunger and boredom as a paragraph tag
 		container.append(
-			"<p>" + pet.hunger + "," + pet.boredom + "</p>"
+			"<p>Food: " + pet.hunger + ", Joy: " + pet.boredom + "</p>"
 		);
 
 		// feed pet button
