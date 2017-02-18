@@ -51,6 +51,8 @@ function View(controller, output) {
 		container.append(playButton);
 	}
 
+
+
 	// Draw all of the pets (should probably just be called once)
 	this.drawAllPets = function () {
 		// get all of the pets

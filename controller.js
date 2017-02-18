@@ -30,6 +30,7 @@ function Controller(model) {
 	this.feedPet = function (index) {
 		var pet = this.getPetByIndex(index);
 		pet.hunger += 10;
+		pet.boredom += .5; 
 		// Data was updated, so update storage
 		this.model.updateAllPets();
 	}
@@ -38,6 +39,7 @@ function Controller(model) {
 	this.playWithPet = function (index) {
 		var pet = this.getPetByIndex(index);
 		pet.boredom += 10;
+		pet.hunger -= 1;
 		// Data was updated, so update storage
 		this.model.updateAllPets();
 	}
